@@ -1,0 +1,85 @@
+:root {
+--bg: #0b0f14;
+--surface: #0f1720;
+--muted: #94a3b8;
+}
+html,body,#root { height:100%; }
+body { background: var(--bg); color: #e6eef8; font-family: Inter,Segoe UI,Roboto,Arial; }
+a { color: inherit; text-decoration: none; }
+
+
+/* small utility */
+.container { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
+
+
+/* simple responsive grid for projects */
+.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+
+
+/* modest card polish */
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; padding:16px; box-shadow: 0 6px 18px rgba(2,6,23,0.6); }
+
+/* ---- Full Immersive Background ---- */
+.full-immersive-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Moving gradient layer */
+.bg-gradient {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  animation: rotateGradient 20s linear infinite;
+  filter: blur(80px);
+}
+
+@keyframes rotateGradient {
+  0% { transform: rotate(0deg) translate(-20%, -20%); }
+  50% { transform: rotate(180deg) translate(20%, 20%); }
+  100% { transform: rotate(360deg) translate(-20%, -20%); }
+}
+
+/* Floating blob layer */
+.blob {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  opacity: 0.35;
+  animation: floatBlob 12s ease-in-out infinite;
+  filter: blur(90px);
+}
+
+@keyframes floatBlob {
+  0%,100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(120px, -80px) scale(1.2); }
+}
+
+/* Noise texture layer */
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image: url("https://i.imgur.com/7eqQdIH.png"); /* noise texture */
+  mix-blend-mode: overlay;
+  animation: noiseMove 0.4s steps(2) infinite;
+}
+
+@keyframes noiseMove {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(5%, -5%); }
+  50% { transform: translate(-5%, 5%); }
+  75% { transform: translate(-5%, -5%); }
+  100% { transform: translate(0,0); }
+}
+ .skills-bg{
+  margin-left: 120px;
+ }
+
