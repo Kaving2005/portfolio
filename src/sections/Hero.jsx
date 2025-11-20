@@ -39,7 +39,7 @@ export default function Hero() {
             },
           }}
         >
-          Hi, I'm Kavin
+          Hi, I'm Kavin G
         </Typography>
 
         <Typography variant="h5" sx={{ opacity: 0.8, mt: 1 }}>

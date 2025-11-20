@@ -21,8 +21,15 @@ const DEMO = [
     title: "Portfolio",
     desc: "Animated personal portfolio using React, Framer Motion, and modern UI patterns.",
     tags: ["React", "Framer Motion", "MUI"],
-    demo: "#",
-    github: "#",
+    demo: "https://portfolio-kavings-projects.vercel.app/",
+    github: "https://github.com/Kaving2005/portfolio",
+  },
+  {
+    title: "Clock",
+    desc: "Creating a clock using HTML, CSS, and JavaScript involves three distinct components working together",
+    tags: ["HTML", "CSS", "JS"],
+    demo: "https://analog-clock-kavings-projects.vercel.app/",
+    github: "https://github.com/Kaving2005/Analog-Clock",
   },
 ];
 
