@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ResumePage() {
   const handleDownload = () => {
-    window.open("public/images/KAVIN_G_Resume.pdf", "_blank"); // Opens PDF in new tab
+    window.open("/images/KAVIN_G_Resume.pdf", "_blank"); // Opens PDF in new tab
   };
 
   return (
