@@ -3,7 +3,7 @@ import { Typography, Button, Box, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTheme } from "@mui/material/styles";
 import Lottie from "lottie-react";
-import resumeAnimation from "../pages/Resume.json";
+import resumeAnimation from "../pages/resume.json";
 
 export default function ResumePage() {
   const theme = useTheme();
