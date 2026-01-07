@@ -10,7 +10,7 @@ export default function ResumePage() {
   const isDark = theme.palette.mode === "dark";
 
   const handleDownload = () => {
-    window.open("/images/KAVIN_G_Resume.pdf", "_blank");
+    window.open("public/images/KAVIN_G_Resume.pdf", "_blank");
   };
 
   return (
