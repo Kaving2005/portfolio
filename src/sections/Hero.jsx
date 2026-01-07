@@ -127,7 +127,7 @@ export default function Hero() {
       {/* Right Image Section */}
       <Box
         component={motion.img}
-        src="public/images/kaving.JPG"
+        src="public\images\kaving.JPG"
         alt="Profile"
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
