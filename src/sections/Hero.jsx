@@ -127,7 +127,7 @@ export default function Hero() {
       {/* Right Image Section */}
       <Box
         component={motion.img}
-        src="public/images/kaving.JPG"
+        src="/images/kaving.JPG"
         alt="Profile"
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -138,7 +138,7 @@ export default function Hero() {
           borderRadius: "50%",
           objectFit: "cover",
 
-          // ⭐ Neon Glow Effect
+          //  Neon Glow Effect
           boxShadow:
             "0 0 20px #7b2ff7, 0 0 40px #00c6ff, 0 0 60px #ff4ecd",
           animation: "glowPulse 4s ease-in-out infinite",
