@@ -13,7 +13,7 @@ export default function Hero() {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         gap: 4,
         px: { xs: 2, md: 8 },
         flexDirection: { xs: "column-reverse", md: "row" },
