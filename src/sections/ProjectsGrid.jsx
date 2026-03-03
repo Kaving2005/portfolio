@@ -31,6 +31,13 @@ const DEMO = [
     demo: "https://analog-clock-kavings-projects.vercel.app/",
     github: "https://github.com/Kaving2005/Analog-Clock",
   },
+   {
+    title: "Neon Strike",
+    desc: "Creating a NeonStrike Game using HTML, CSS, and JavaScript involves three distinct components working together",
+    tags: ["HTML", "CSS", "JS"],
+    demo: "https://shotgameten.vercel.app/",
+    github: "https://github.com/Kaving2005/shoot_game",
+  },
 ];
 
 export default function ProjectsGrid() {
