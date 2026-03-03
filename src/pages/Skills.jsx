@@ -30,7 +30,7 @@ export default function Skills() {
     { icon: <SiBootstrap size={70} color="#7952B3" />, label: "Bootstrap" }, // Purple
     { icon: <SiSwagger size={70} color="#85EA2D" />, label: "Swagger" },     // Green Swagger
     { icon: <SiMysql size={70} color="#4479A1" />, label: "MySQL" },         // MySQL Blue
-    { icon: <SiExpress size={70} color="#000000" />, label: "Express" },      // Black
+    { icon: <SiExpress size={70} color="#23A455" />, label: "Express" },      // Black
     { icon: <SiRedux size={70} color="#764ABC" />, label: "Redux" }          // Purple Redux
   ];
 
