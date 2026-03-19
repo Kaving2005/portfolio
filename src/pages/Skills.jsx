@@ -12,7 +12,8 @@ import {
   SiSwagger,
   SiMysql,
   SiExpress,
-  SiRedux
+  SiRedux,
+  SiFastapi
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
@@ -31,7 +32,8 @@ export default function Skills() {
     { icon: <SiSwagger size={70} color="#85EA2D" />, label: "Swagger" },     // Green Swagger
     { icon: <SiMysql size={70} color="#4479A1" />, label: "MySQL" },         // MySQL Blue
     { icon: <SiExpress size={70} color="#23A455" />, label: "Express" },      // Black
-    { icon: <SiRedux size={70} color="#764ABC" />, label: "Redux" }          // Purple Redux
+    { icon: <SiRedux size={70} color="#764ABC" />, label: "Redux" },          // Purple Redux
+    { icon: <SiFastapi size={70} color="#009688" />, label: "FastAPI" }      // Teal FastAPI
   ];
 
   return (
