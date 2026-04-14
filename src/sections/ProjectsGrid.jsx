@@ -25,13 +25,13 @@ const DEMO = [
     github: "https://github.com/Kaving2005/portfolio",
   },
   {
-    title: "Clock",
-    desc: "Creating a clock using HTML, CSS, and JavaScript involves three distinct components working together",
-    tags: ["HTML", "CSS", "JS"],
-    demo: "https://analog-clock-kavings-projects.vercel.app/",
-    github: "https://github.com/Kaving2005/Analog-Clock",
+    title: "Movie App",
+    desc: "Creating a movie app using React and a movie API and Node.js involves fetching data and displaying it in a user-friendly interface.",
+    tags: ["React", "API", "Node.js","MongoDB"],
+    demo: "https://kavingmovieapp.onrender.com/",
+    github: "https://github.com/Kaving2005/movie-app",
   },
-   {
+  {
     title: "Neon Strike",
     desc: "Creating a NeonStrike Game using HTML, CSS, and JavaScript involves three distinct components working together",
     tags: ["HTML", "CSS", "JS"],
