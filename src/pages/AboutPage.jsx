@@ -3,5 +3,5 @@ import About from '../sections/About'
 
 
 export default function AboutPage(){
-return <div className="container" id='about'><About/></div>
+return <div className="container"><About/></div>
 }

@@ -49,7 +49,7 @@ export default function ProjectsGrid() {
 
   return (
     <Box>
-      <Typography variant="h4" sx={{ mb: 4, fontWeight: "bold" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 4, fontWeight: "bold" }}>
         Projects
       </Typography>
 
@@ -75,7 +75,7 @@ export default function ProjectsGrid() {
             }}
           >
             {/* Title */}
-            <Typography variant="h6" fontWeight="bold">
+            <Typography variant="h6" component="h3" fontWeight="bold">
               {p.title}
             </Typography>
 

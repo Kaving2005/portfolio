@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function About() {
   return (
     <Box sx={{ px: { xs: 2, md: 6 }, py: 6 }}>
-      <Typography variant="h3" sx={{ mb: 4 }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 4 }}>
         About Me
       </Typography>
 
@@ -20,7 +20,7 @@ export default function About() {
             <Box
               component="img"
               src="/images/aboutimg.svg" // put image in public folder
-              alt="My profile"
+              alt="Kavin G profile illustration"
               sx={{
                 width: '100%',
                 maxWidth: 350,

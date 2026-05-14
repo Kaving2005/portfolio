@@ -40,14 +40,14 @@ export default function Skills() {
     <div className="skills-bg">
       <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white p-10">
         
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-5xl font-bold mb-12 "
         >
           Skills
-        </motion.h1>
+        </motion.h2>
         <br />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 ">

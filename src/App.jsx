@@ -7,13 +7,37 @@ import AboutPage from './pages/AboutPage'
 import Skills from './pages/Skills.jsx'
 import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/Contactpages.jsx'
+import Seo from './components/Seo'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import ParticleBackground from './components/ParticleBackground'
 
 export default function App() {
+  const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin
+  const seoSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Kavin G",
+    jobTitle: "Full-Stack Developer",
+    url: siteUrl,
+    image: new URL("/images/kaving.jpg", siteUrl).href,
+    sameAs: [
+      "https://github.com/Kaving2005",
+      "https://www.linkedin.com/in/kavin-g-970b03294",
+    ],
+    description:
+      "Full-stack developer building responsive React, MUI, and Framer Motion experiences.",
+  }
+
   return (
     <div style={{ position: "relative" }}>
+      <Seo
+        title="Kavin G | Full-Stack Developer Portfolio"
+        description="Explore Kavin G's portfolio to see projects, technical skills, resume, and contact details for full-stack web development work."
+        image="/images/port.jpg"
+        path="/"
+        schema={seoSchema}
+      />
       
       {/* GLOBAL FIXED BACKGROUND */}
       <div 
@@ -31,6 +55,7 @@ export default function App() {
       <div style={{ position: "relative", zIndex: 2 }}>
         <Navbar />
 
+        <main>
         <Container maxWidth={false} sx={{ paddingTop: 6 }}>
 
           {/* All pages in one long scroll page */}
@@ -42,6 +67,7 @@ export default function App() {
           <SectionWrapper id="contact"><ContactPage /></SectionWrapper>
 
         </Container>
+        </main>
 
         <Footer />
       </div>

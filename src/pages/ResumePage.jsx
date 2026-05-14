@@ -86,7 +86,7 @@ export default function ResumePage() {
 
         {/* RIGHT: TEXT + BUTTON */}
         <Box sx={{ flex: 1, p: 4 }}>
-          <Typography variant="h4" fontWeight="bold">
+          <Typography variant="h2" component="h2" fontWeight="bold">
             My Resume
           </Typography>
 

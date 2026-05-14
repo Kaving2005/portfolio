@@ -23,9 +23,12 @@ export default function Hero() {
       <Box>
         {/*  Gradient Animated Name */}
         <Typography
-          variant="h2"
+          variant="h1"
+          component="h1"
           fontWeight={700}
           sx={{
+            fontSize: { xs: "2.8rem", md: "4.8rem" },
+            lineHeight: 1.05,
             background: "linear-gradient(90deg, #00c6ff, #ff4ecd, #7b2ff7)",
             backgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -42,8 +45,13 @@ export default function Hero() {
           Hi, I'm Kavin G
         </Typography>
 
-        <Typography variant="h5" sx={{ opacity: 0.8, mt: 1 }}>
+        <Typography variant="h5" component="p" sx={{ opacity: 0.85, mt: 1 }}>
           Full-Stack Developer
+        </Typography>
+
+        <Typography component="p" sx={{ maxWidth: 620, mt: 2, opacity: 0.75 }}>
+          I build responsive web apps with React, MUI, Framer Motion, JavaScript,
+          and modern API-driven workflows.
         </Typography>
 
         {/* View Projects Button */}
@@ -63,16 +71,17 @@ export default function Hero() {
           
           {/* GitHub */}
           <IconButton
-            component={motion.a}
-            href="https://github.com/Kaving2005"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            sx={{
-              fontSize: 35,
-              color: "#1192e3ff",
-              transition: "0.3s",
+          component={motion.a}
+          href="https://github.com/Kaving2005"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="GitHub profile"
+          sx={{
+            fontSize: 35,
+            color: "#1192e3ff",
+            transition: "0.3s",
               "&:hover": {
                 filter: "drop-shadow(0 0 10px #ffffff)",
               },
@@ -83,16 +92,17 @@ export default function Hero() {
 
           {/* Instagram */}
           <IconButton
-            component={motion.a}
-            href="https://instagram.com/YOUR_INSTA"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            sx={{
-              fontSize: 35,
-              color: "#ff2f8b",
-              transition: "0.3s",
+          component={motion.a}
+          href="https://instagram.com/YOUR_INSTA"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="Instagram profile"
+          sx={{
+            fontSize: 35,
+            color: "#ff2f8b",
+            transition: "0.3s",
               "&:hover": {
                 filter: "drop-shadow(0 0 12px #ff2f8b)",
               },
@@ -103,16 +113,17 @@ export default function Hero() {
 
           {/* LinkedIn */}
           <IconButton
-            component={motion.a}
-            href="https://www.linkedin.com/in/kavin-g-970b03294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.9 }}
-            sx={{
-              fontSize: 35,
-              color: "#0A66C2",
-              transition: "0.3s",
+          component={motion.a}
+          href="https://www.linkedin.com/in/kavin-g-970b03294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="LinkedIn profile"
+          sx={{
+            fontSize: 35,
+            color: "#0A66C2",
+            transition: "0.3s",
               "&:hover": {
                 filter: "drop-shadow(0 0 12px #0A66C2)",
               },
@@ -128,7 +139,9 @@ export default function Hero() {
       <Box
         component={motion.img}
         src="/images/kaving.jpg"
-        alt="Profile"
+        alt="Kavin G portrait"
+        loading="eager"
+        decoding="async"
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
