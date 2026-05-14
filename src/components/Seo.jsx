@@ -53,7 +53,7 @@ export default function Seo({
   schema,
 }) {
   useEffect(() => {
-    const baseUrl = import.meta.env.google-site-verification || window.location.origin;
+    const baseUrl = import.meta.env.google_site_verification || window.location.origin;
     const canonicalUrl = new URL(path, baseUrl).href;
     const imageUrl = new URL(image, baseUrl).href;
     const keywordContent = keywords.filter(Boolean).join(", ");
