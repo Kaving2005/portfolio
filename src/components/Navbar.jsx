@@ -28,6 +28,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 export default function Navbar() {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
   const { mode, toggleMode } = React.useContext(ThemeContext);
   const [activeSection, setActiveSection] = useState("#home");
   const [openDrawer, setOpenDrawer] = useState(false);

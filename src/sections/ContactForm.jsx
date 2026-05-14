@@ -18,6 +18,7 @@ const Contact = () => {
   const form = useRef();
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const isBrowser = typeof window !== "undefined";
 
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -108,14 +109,16 @@ const Contact = () => {
             Send me a message anytime.
           </Typography>
 
-          <Box
-            component={motion.div}
-            animate={{ y: [0, -12, 0] }}
-            transition={{ repeat: Infinity, duration: 3 }}
-            sx={{ width: 260, mt: 4 }}
-          >
-            <Lottie animationData={contactAnimation} loop />
-          </Box>
+          {isBrowser ? (
+            <Box
+              component={motion.div}
+              animate={{ y: [0, -12, 0] }}
+              transition={{ repeat: Infinity, duration: 3 }}
+              sx={{ width: 260, mt: 4 }}
+            >
+              <Lottie animationData={contactAnimation} loop />
+            </Box>
+          ) : null}
         </Box>
 
         <Box sx={{ flex: 1.2, p: 6 }}>

@@ -1,12 +1,14 @@
 import React from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { getDesignTokens } from './tokens'
 
 
 export default function ThemeProviderWrapper({ children }){
-// prefer dark by default but we expose toggle in App
-const prefersDark = useMediaQuery('(prefers-color-scheme: dark)')
+// Prefer the user's OS theme when we are in a browser; default to light on the server.
+const prefersDark =
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches
 const [mode, setMode] = React.useState(prefersDark ? 'dark' : 'light')
 const toggleMode = () => setMode(prev => prev === 'dark' ? 'light' : 'dark')
 

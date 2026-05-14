@@ -4,6 +4,10 @@ import { loadSlim } from "tsparticles-slim";
 import { ThemeContext } from "../theme/ThemeProviderWrapper"; // adjust path if needed
 
 const ParticleBackground = () => {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
   const { mode } = useContext(ThemeContext);  
   const isDark = mode === "dark";
 

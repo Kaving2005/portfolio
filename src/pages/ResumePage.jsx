@@ -8,6 +8,7 @@ import resumeAnimation from "../pages/resume.json";
 export default function ResumePage() {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const isBrowser = typeof window !== "undefined";
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -64,23 +65,32 @@ export default function ResumePage() {
           }}
         >
           <Box
-            component={motion.div}
-            animate={{ y: [0, -12, 0] }}
-            transition={{
-              repeat: Infinity,
-              duration: 3,
-              ease: "easeInOut",
-            }}
             sx={{
               width: 260,
               maxWidth: "100%",
             }}
           >
-            <Lottie
-              animationData={resumeAnimation}
-              loop
-              style={{ width: "100%", height: "100%" }}
-            />
+            {isBrowser ? (
+              <Box
+                component={motion.div}
+                animate={{ y: [0, -12, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 3,
+                  ease: "easeInOut",
+                }}
+              >
+                <Lottie
+                  animationData={resumeAnimation}
+                  loop
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </Box>
+            ) : (
+              <Typography sx={{ color: "white", textAlign: "center" }}>
+                Resume preview available for download.
+              </Typography>
+            )}
           </Box>
         </Box>
 

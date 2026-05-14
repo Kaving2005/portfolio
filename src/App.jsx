@@ -8,33 +8,21 @@ import Skills from './pages/Skills.jsx'
 import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/Contactpages.jsx'
 import Seo from './components/Seo'
+import { createPersonSchema, getSiteUrl, SITE_DESCRIPTION, SITE_IMAGE, SITE_TITLE } from './seo/siteMetadata'
 import { Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import ParticleBackground from './components/ParticleBackground'
 
 export default function App() {
-  const siteUrl = import.meta.env.VITE_SITE_URL || window.location.origin
-  const seoSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Kavin G",
-    jobTitle: "Full-Stack Developer",
-    url: siteUrl,
-    image: new URL("/images/kaving.jpg", siteUrl).href,
-    sameAs: [
-      "https://github.com/Kaving2005",
-      "https://www.linkedin.com/in/kavin-g-970b03294",
-    ],
-    description:
-      "Full-stack developer building responsive React, MUI, and Framer Motion experiences.",
-  }
+  const siteUrl = getSiteUrl()
+  const seoSchema = createPersonSchema(siteUrl)
 
   return (
     <div style={{ position: "relative" }}>
       <Seo
-        title="Kavin G | Full-Stack Developer Portfolio"
-        description="Explore Kavin G's portfolio to see projects, technical skills, resume, and contact details for full-stack web development work."
-        image="/images/port.jpg"
+        title={SITE_TITLE}
+        description={SITE_DESCRIPTION}
+        image={SITE_IMAGE}
         path="/"
         schema={seoSchema}
       />

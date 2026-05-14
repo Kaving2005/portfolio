@@ -49,7 +49,7 @@ export default function Seo({
   path = "https://kaving.vercel.app/",
   keywords = DEFAULT_KEYWORDS,
   type = "website",
-  siteName = "Kavin G Portfolio",
+  siteName = "Kavin G",
   schema,
 }) {
   useEffect(() => {
