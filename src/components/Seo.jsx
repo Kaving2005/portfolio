@@ -45,7 +45,7 @@ function upsertLink(rel, href) {
 export default function Seo({
   title,
   description,
-  image = "/images/port.jpg",
+  image = "/images/kaving.jpg",
   path = "https://kaving.vercel.app/",
   keywords = DEFAULT_KEYWORDS,
   type = "website",

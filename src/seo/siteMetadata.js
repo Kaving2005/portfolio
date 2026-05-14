@@ -16,15 +16,15 @@ export const SITE_KEYWORDS = [
 ];
 
 export function getSiteUrl() {
-  if (import.meta.env.google_site_verification) {
-    return import.meta.env.google_site_verification;
+  if (import.meta.env.VITE_SITE_URL) {
+    return import.meta.env.VITE_SITE_URL;
   }
 
   if (typeof window !== "undefined" && window.location?.origin) {
     return window.location.origin;
   }
 
-  return "http://localhost:4173";
+  return "https://kaving.vercel.app";
 }
 
 export function createPersonSchema(siteUrl) {
