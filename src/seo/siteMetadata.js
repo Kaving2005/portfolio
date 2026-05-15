@@ -1,5 +1,5 @@
 export const SITE_NAME = "Kavin G";
-export const SITE_TITLE = "Kavin G | Full-Stack Developer Portfolio";
+export const SITE_TITLE = "Kavin G Full-Stack Developer";
 export const SITE_DESCRIPTION =
   "Explore Kavin G's portfolio to see projects, technical skills, resume, and contact details for full-stack web development work.";
 export const SITE_IMAGE = "https://kaving.vercel.app/images/kaving.jpg";
@@ -13,6 +13,11 @@ export const SITE_KEYWORDS = [
   "MUI",
   "Framer Motion",
   "web developer",
+  "Express Js",
+  "Node Js",
+  "MySQL",
+  "MongoDb",
+  "PostgreSql"
 ];
 
 export function getSiteUrl() {
