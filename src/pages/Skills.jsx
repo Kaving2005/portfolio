@@ -13,9 +13,13 @@ import {
   SiMysql,
   SiExpress,
   SiRedux,
-  SiFastapi
+  SiFastapi,
+  SiPostgresql,
+  SiDocker,
+ 
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+
 
 export default function Skills() {
   const skills = [
@@ -33,7 +37,10 @@ export default function Skills() {
     { icon: <SiMysql size={70} color="#4479A1" />, label: "MySQL" },         // MySQL Blue
     { icon: <SiExpress size={70} color="#23A455" />, label: "Express" },      // Black
     { icon: <SiRedux size={70} color="#764ABC" />, label: "Redux" },          // Purple Redux
-    { icon: <SiFastapi size={70} color="#009688" />, label: "FastAPI" }      // Teal FastAPI
+    { icon: <SiFastapi size={70} color="#009688" />, label: "FastAPI" },
+    { icon: <SiPostgresql size={70} color="#336791" />, label: "PostgreSQL" },
+    { icon: <SiDocker size={70} color="#2496ED" />, label: "Docker" },
+    
   ];
 
   return (

@@ -41,6 +41,7 @@ export default function Navbar() {
     ["Projects", "#projects", "#4dabf7", <WorkIcon sx={{ mr: 1 }} />],
     ["About", "#about", "#ffa94d", <InfoIcon sx={{ mr: 1 }} />],
     ["Skills", "#skills", "#69db7c", <CodeIcon sx={{ mr: 1 }} />],
+    ["Experience", "#experience", "#ffa94d", <WorkIcon sx={{ mr: 1 }} />],
     ["Resume", "#resume", "#b197fc", <DescriptionIcon sx={{ mr: 1 }} />],
     ["Contact", "#contact", "#f06595", <ContactMailIcon sx={{ mr: 1 }} />],
   ];

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage'
 import Skills from './pages/Skills.jsx'
+import WorkExperiencePage from './pages/WorkExperiencePage'
 import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/Contactpages.jsx'
 import Seo from './components/Seo'
@@ -51,6 +52,7 @@ export default function App() {
           <SectionWrapper id="projects"><ProjectsPage /></SectionWrapper>
           <SectionWrapper id="about"><AboutPage /></SectionWrapper>
           <SectionWrapper id="skills"><Skills /></SectionWrapper>
+          <SectionWrapper id="experience"><WorkExperiencePage /></SectionWrapper>
           <SectionWrapper id="resume"><ResumePage /></SectionWrapper>
           <SectionWrapper id="contact"><ContactPage /></SectionWrapper>
 
